@@ -2,11 +2,7 @@ package com.rational.controller;
 
 import com.rational.model.UserAccount;
 import com.rational.service.UserAccountService;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -32,7 +28,7 @@ public class UserAccountManagementController {
     }
 
     @RequestMapping("/user/save")
-    public UserAccount saveUser(UserAccount user){
+    public UserAccount saveUser(@RequestBody UserAccount user){
         return userAccountService.saveUser(user);
     }
 

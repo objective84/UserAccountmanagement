@@ -25,7 +25,7 @@ public class DefaultUserAccountService implements UserAccountService{
     }
 
     public UserAccount saveUser(UserAccount user) {
-        return saveUser(user);
+        return userAccountRepository.saveAndFlush(user);
     }
 
     public void deleteUser(Long userId) {
