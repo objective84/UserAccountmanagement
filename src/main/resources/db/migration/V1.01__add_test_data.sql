@@ -1,0 +1,6 @@
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('1', 'Frodo', 'Baggins', 'fbaggins@shire.net', '', '#4 Bagshot Row', 'Hobbiton', 'Shire', '');
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('2', 'Bilbo', 'Baggins', 'bbaggins@shire.net', '', '#4 Bagshot Row', 'Hobbiton', 'Shire', '');
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('3', 'Samwise', 'Gamgee', 'sgamgee@shire.net', '', '#2 Bagshot Row', 'Hobbiton', 'Shire', '');
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('4', 'Meriadoc', 'Brandybuck', 'mbrandybuck@shire.net', '', 'Brandy Hall', 'Buckland', 'Shire', '');
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('5', 'Peragrin', 'Took', 'ptook@shire.net', '', 'Great Smials', 'Tuckborough', 'Shire', '');
+INSERT INTO `uam`.`useraccount` (`id`, `firstname`, `lastname`, `email`, `phone`, `address`, `city`, `state`, `zip`) VALUES ('6', 'Bruce', 'Wayne', 'bwayne@wayneenterprise.com', '3275564448', '1007 Mountain Drive', 'Gotham City', 'New Jersey', '53540');

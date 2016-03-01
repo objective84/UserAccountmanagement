@@ -15,4 +15,5 @@ public interface UserAccountService {
     List<UserAccount> loadAllUsers();
     UserAccount saveUser(UserAccount user);
     void deleteUser(Long userId);
+    List<UserAccount> sortBy(String field);
 }

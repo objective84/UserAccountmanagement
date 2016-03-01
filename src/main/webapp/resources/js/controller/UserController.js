@@ -66,7 +66,11 @@ uamApp.controller('UserController', ['$scope', '$http', function ($scope, $http)
         $scope.submitted = false;
     };
 
-
+    this.sortBy = function(sortField){
+        $http.get(url + '/users/sort-by/' + sortField).success(function (data) {
+            $scope.users = data;
+        });
+    }
 
     self.getUserList();
 

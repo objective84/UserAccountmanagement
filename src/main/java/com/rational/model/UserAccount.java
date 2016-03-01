@@ -3,15 +3,14 @@ package com.rational.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Comparator;
 
 /**
  * Created by Peter on 2/28/2016.
  */
 
 @Entity
-public class UserAccount {
-
-
+public class UserAccount implements Comparable<UserAccount>{
 
     @Id @GeneratedValue
     private Long id;
@@ -94,5 +93,12 @@ public class UserAccount {
 
     public void setZip(String zip) {
         this.zip = zip;
+    }
+
+    public int compareTo(UserAccount o) {
+        int compareLast = this.lastName.compareTo(o.getLastName());
+        int compareFirst = this.firstName.compareTo(o.getFirstName());
+        if(compareLast != 0 ) return compareLast;
+        else return compareFirst;
     }
 }

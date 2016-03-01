@@ -111,9 +111,9 @@
         <table class="table">
             <thead>
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
+                <th><a href="javascript:void(0);" ng-click="controller.sortBy('FirstName');">First Name</a></th>
+                <th><a href="javascript:void(0);" ng-click="controller.sortBy('LastName');">Last Name</a></th>
+                <th><a href="javascript:void(0);" ng-click="controller.sortBy('Email');">Email</a></th>
                 <th>Actions</th>
             </tr>
             </thead>
